@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/Help/Help",
+    "pages/moreResources/moreResources"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#5FD0DD",
+    "navigationBarTitleText": "365医网入口",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "custom": true,
+    "backgroundColor": "#ffffff",
+    "color": "#999",
+    "selectedColor": "#d43a3c",
+    "list": [
+      {
+        "pagePath": "pages/moreResources/moreResources",
+        "text": "更多资源",
+        "iconPath": "/images/icon/btm-icon1.png",
+        "selectedIconPath": "/images/icon/btm-icon1-act.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "365推荐",
+        "iconPath": "/images/icon/btm-icon2.png",
+        "selectedIconPath": "/images/icon/btm-icon2-act.png"
+      },
+      {
+        "pagePath": "pages/Help/Help",
+        "text": "帮助中心",
+        "iconPath": "/images/icon/btm-icon3.png",
+        "selectedIconPath": "/images/icon/btm-icon3-act.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "个人中心",
+        "iconPath": "/images/icon/btm-icon4.png",
+        "selectedIconPath": "/images/icon/btm-icon4-act.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "customtabbar": "custom-tab-bar/index"
+  },
+ 
+  "permission": {
+    "scope.userLocation": {
+    "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+    }
+}

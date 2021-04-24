@@ -1,0 +1,178 @@
+<!--pages/userinfo/userinfo.wxml-->
+<!-- <text>pages/userinfo/userinfo.wxml</text> -->
+<view class="main">
+  <view>
+    <view class="home_nav_group">
+      <view wx:for="{{navlist}}" :key="index" class="home_nav_box">
+        <view class="home_nav_title_box" bindtap="changeselect" data-index="{{index}}">
+
+          <view>
+            <view class="home_nav_title">
+              {{item}}
+            </view>
+            <view class="home_nav_border" wx:if="{{selectnav==index}}">
+
+            </view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+    <view class="search_box flexbox">
+      <input class="search_inp" auto-focus placeholder="请输入文字" />
+      <view>
+        <image class="search_icon" src="/images/icon/search-icon.png"></image>
+      </view>
+    </view>
+    <view class="home_type_list">
+      <view wx:for="{{typelist}}" :key="index" class="home_nav_box ">
+        <view class="home_nav_title_box" bindtap="changetype" data-index="{{index}}">
+          <view class="flexbox  flex_center">
+            <view class="{{typeindex==index?'border_green align_center flexbox':' flexbox align_center'}}">
+              <view>
+                <image class="type_icon" src="{{typeindex==index?item.acticon:item.icon}}"></image>
+              </view>
+              <view class="{{typeindex==index?'type_title color_black ':'type_title color_grey'}}">
+                {{item.type}}
+              </view>
+            </view>
+
+          </view>
+        </view>
+
+      </view>
+    </view>
+    <view class="order_card ">
+      <view class="flexbox">
+        <view class="order_card_top flexbox">
+          <view class="order_card_left">
+            <view wx:for="{{otherlist}}" class="" data-index="{{index}}" bindtap="changeother">
+              <view class="{{otherindex==index?'order_box order_box_active':'order_box'}}">
+                {{item.name}}
+              </view>
+            </view>
+          </view>
+          <view class="order_card_right">
+            <view>
+              更多
+            </view>
+            <view>
+              <van-icon name="arrow" size="14px" />
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="flexbox othernet_box">
+        <view wx:for="{{othernet}}" class="othernet_txt onelist">
+          {{item.outsideName}}
+        </view>
+      </view>
+
+    </view>
+    <view class="bottom_title">
+      点击下方板块进入相应频道
+    </view>
+    <view class="bottom_bankuai_group">
+      <view class="bottom_bankuai_first">
+        <view>
+          <image class="bottom_bankuai_first_icon" src="/images/icon/xues-icon.png"></image>
+        </view>
+        <view class="bottom_bankuai_txt">
+          学术文章
+        </view>
+      </view>
+      <view>
+        <view class="bottom_bankuai_second">
+          <view>
+            <image class="bottom_bankuai_second_icon" src="/images/icon/zw-icon1.png"></image>
+          </view>
+          <view class="bottom_bankuai_txt">
+            学术视频
+          </view>
+        </view>
+        <view class="bottom_bankuai_second bottom_bankuai_second_next">
+          <view>
+            <image class="bottom_bankuai_second_icon" src="/images/icon/zw-icon4.png"></image>
+          </view>
+          <view class="bottom_bankuai_txt">
+            学术课件
+          </view>
+        </view>
+      </view>
+      <view>
+        <view class="bottom_bankuai_second">
+          <view>
+            <image class="bottom_bankuai_second_icon" src="/images/icon/zw-icon2.png"></image>
+          </view>
+          <view class="bottom_bankuai_txt">
+            学术音频
+          </view>
+        </view>
+        <view class="bottom_bankuai_second bottom_bankuai_second_next">
+          <view>
+            <image class="bottom_bankuai_second_icon" src="/images/icon/zw-icon5.png"></image>
+          </view>
+          <view class="bottom_bankuai_txt">
+            指南共识
+          </view>
+        </view>
+      </view>
+      <view>
+        <view class="bottom_bankuai_second">
+          <view>
+            <image class="bottom_bankuai_second_icon" src="/images/icon/zw-icon3.png"></image>
+          </view>
+          <view class="bottom_bankuai_txt">
+            会议主页
+          </view>
+        </view>
+        <view class="bottom_bankuai_second bottom_bankuai_second_next">
+          <view>
+            <image class="bottom_bankuai_second_icon" src="/images/icon/zw-icon7.png"></image>
+          </view>
+          <view class="bottom_bankuai_txt">
+            学术专题
+          </view>
+        </view>
+      </view>
+
+
+    </view>
+    <view class="flexbox hot_tuijian_group">
+      <view class="hot_tuijian">
+        热词推荐
+      </view>
+      <view class="hot_tuijian hot_tuijian_right">
+        学术资源
+      </view>
+      <view class="hot_tuijian hot_tuijian_right">
+        学术资源
+      </view>
+      <view class="hot_tuijian hot_tuijian_right">
+        学术资源
+      </view>
+      <view class="hot_tuijian hot_tuijian_right">
+        学术资源
+      </view>
+
+    </view>
+    <view class="flexbox hot_tuijian_group bottom_bankuai_second_next">
+      <view class="hot_tuijian">
+        学术资源
+      </view>
+      <view class="hot_tuijian hot_tuijian_right">
+        学术资源
+      </view>
+      <view class="hot_tuijian hot_tuijian_right">
+        学术资源
+      </view>
+      <view class="hot_tuijian hot_tuijian_right">
+        学术专题
+      </view>
+      <view class="hot_tuijian hot_tuijian_right">
+        学术资源
+      </view>
+
+    </view>
+  </view>
+</view>

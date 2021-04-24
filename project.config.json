@@ -1,0 +1,129 @@
+{
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": false,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": true,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": false,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.12.0",
+  "appid": "wxb0277ba9a2be559d",
+  "projectname": "weixin",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "isGameTourist": false,
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
+      "list": []
+    },
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "currentL": -1,
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "pages/clock/clock",
+          "pathName": "pages/clock/clock",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 1,
+          "name": "用户中心",
+          "pathName": "pages/userinfo/userinfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "dl",
+          "pathName": "pages/userlogin/userlogin",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "称重记录",
+          "pathName": "pages/weight/weight",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "预约记录",
+          "pathName": "pages/orderRecord/orderRecord",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/shop/shop",
+          "pathName": "pages/shop/shop",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "预约确定",
+          "pathName": "pages/orderSure/orderSure",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "商品详情",
+          "pathName": "pages/shopdetail/shopdetail",
+          "scene": null
+        }
+      ]
+    }
+  }
+}
