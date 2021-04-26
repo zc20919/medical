@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/my/my",
     "pages/Help/Help",
-    "pages/moreResources/moreResources"
+    "pages/moreResources/moreResources",
+    "pages/webnet/webnet"
   ],
   "window": {
     "backgroundTextStyle": "light",

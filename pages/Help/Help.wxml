@@ -1,2 +1,4 @@
 <!--pages/Help/Help.wxml-->
-<text>pages/Help/Help.wxml</text>
+<!-- <text>pages/Help/Help.wxml</text> -->
+<web-view src="https://weixin.365heart.com/help/getHelp">
+</web-view>

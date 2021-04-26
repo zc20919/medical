@@ -18,6 +18,7 @@ App({
     })
   },
   globalData: {
-    
+      weburl:'http://jsp.365heart.com/dictionary/topfive/',
+      searchurl:'http://jsp.365heart.com/search'
   }
 })

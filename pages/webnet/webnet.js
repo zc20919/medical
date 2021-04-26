@@ -1,18 +1,37 @@
-// pages/Help/Help.js
+// pages/webnet/webnet.js
+let app=getApp()
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-
+    weburl:app.globalData.weburl,
+    searchurl:'',
+    url:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(options)
+    if(options.url){
+      this.setData({
+        url:app.globalData.weburl+options.url
+      })
+    }
+    console.log(app.globalData.weburl+options.url)
+     if(options.keyword){
+      this.setData({
+        url:`${app.globalData.searchurl}?keyword=${options.url}&&queryType=${options.queryType}`
+      })
+      console.log(`${app.globalData.searchurl}?keyword=${options.keyword}&&queryType=${options.queryType}`)
+    }
+    if(options.otherurl){
+      this.setData({
+        url:options.otherurl
+      })
+    }
   },
 
   /**
@@ -26,11 +45,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    if (typeof this.getTabBar === 'function' && this.getTabBar()) {
-      this.getTabBar().setData({
-        selected: 2  //数字是当前页面在tabbar的索引,如我的查询页索引是2，因此这边为2，同理首页就为0，审批页面为1
-      })
-    }
+
   },
 
   /**

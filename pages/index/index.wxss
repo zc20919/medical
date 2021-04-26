@@ -13,6 +13,10 @@
   flex-shrink: 0;
 }
 
+.bottom_bankuai_second_next{
+  margin-top: 8rpx;
+}
+
 .home_nav_group {
   flex-wrap: wrap;
   height: 234rpx;
@@ -241,7 +245,7 @@
   height: 46rpx;
 }
 
-.bottom_bankuai_second_next {
+.bottom_bankuai_second_nehttp://jsp.365heart.com/dictionary/topfive/xt {
   margin-top: 8rpx;
 }
 

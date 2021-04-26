@@ -1,0 +1,5 @@
+<!--pages/webnet/webnet.wxml-->
+<!-- <text>pages/webnet/webnet.wxml</text> -->
+<web-view src="{{url}}">
+
+</web-view>

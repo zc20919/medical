@@ -1,2 +1,5 @@
 <!--pages/moreResources/moreResources.wxml-->
-<text>pages/moreResources/moreResources.wxml</text>
+<!-- <text>pages/moreResources/moreResources.wxml</text> -->
+<web-view src="https://weixin.365heart.com/specialsubjec">
+  
+</web-view>

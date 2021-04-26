@@ -26,10 +26,10 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    if (typeof this.getTabBar === 'function' && this.getTabBar()) {
-      console.log(123)
+    if (typeof this.getTabBar === 'function' &&
+      this.getTabBar()) {
       this.getTabBar().setData({
-        currentTab: 3 //数字是当前页面在tabbar的索引,如我的查询页索引是2，因此这边为2，同理首页就为0，审批页面为1
+        selected: 3
       })
     }
   },
