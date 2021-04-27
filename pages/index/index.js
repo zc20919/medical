@@ -6,14 +6,15 @@ function e(e) {
 }
 const app = getApp()
 var http = e(require("../../utils/http"));
-Page({
 
+Page({
+  
   /**
    * 页面的初始数据
    */
   data: {
     navlist: [
-      {name:'365医学网',url:'http://jsp.365heart.com/index'},
+      {name:'365医学网',url:'http://jsp.365heart.com'},
      { name:"学术资源",url:'https://weixin.365heart.com/resource'},
      {name: "学术会议",url:'https://weixin.365heart.com/meeting/calendar/month'},
       {name:"地区子网",url:'https://weixin.365heart.com/yixuewang/index'},
@@ -44,7 +45,20 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let res = wx.getSystemInfoSync()
+    // 判断是否是安卓操作系统 （标题栏苹果为44px,安卓为48px）
+    let titleH;
+    if(res && res['system']){
+      if(res['system'].indexOf('Android')>0){
+        titleH = 48
+      }else{
+        titleH = 44
+      }
+      this.setData({
+        navHeight:titleH + res['statusBarHeight']
+      })
+      // this.globalData.navHeight = titleH + res['statusBarHeight']
+    }
   },
   getkeyword(e){
     this.setData({

@@ -13,8 +13,32 @@
   flex-shrink: 0;
 }
 
-.bottom_bankuai_second_next{
+.bottom_bankuai_second_next {
   margin-top: 8rpx;
+}
+
+.customTitleBar {
+  position: fixed;
+  /*出现滚动条的时候仍能保证标题在最上边*/
+  z-index: 10000;
+  /*让这个view浮在最上层*/
+  color: white;
+  /*设置文字颜色*/
+  text-align: center;
+  /*设置文字居中*/
+  width: 100%;
+  background-color: #5FD0DD;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  top:0;
+  /*设置宽度为整个屏幕的宽度，配置text-align使用*/
+}
+
+.logo{
+  height: 30px;
+  width: 30px;
+  margin-right: 10rpx;
 }
 
 .home_nav_group {
@@ -245,21 +269,23 @@
   height: 46rpx;
 }
 
-.bottom_bankuai_second_nehttp://jsp.365heart.com/dictionary/topfive/xt {
-  margin-top: 8rpx;
+.bottom_bankuai_second_nehttp: //jsp.365heart.com/dictionary/topfive/xt {
+margin-top: 8rpx;
 }
 
 .hot_tuijian_group {
   padding: 0 30rpx;
 }
-.hot_tuijian_right{
+
+.hot_tuijian_right {
   margin-left: 8rpx;
 }
+
 .hot_tuijian {
   width: 132rpx;
   height: 57rpx;
   line-height: 57rpx;
-  color :#fff;
+  color: #fff;
   font-size: 28rpx;
   text-align: center;
   background: #5FD0DD;

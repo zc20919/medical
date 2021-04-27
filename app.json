@@ -14,10 +14,9 @@
   },
   "sitemapLocation": "sitemap.json",
   "tabBar": {
-    "custom": true,
     "backgroundColor": "#ffffff",
     "color": "#999",
-    "selectedColor": "#d43a3c",
+    "selectedColor": "#5FD0DD",
     "list": [
       {
         "pagePath": "pages/moreResources/moreResources",
@@ -45,9 +44,7 @@
       }
     ]
   },
-  "usingComponents": {
-    "customtabbar": "custom-tab-bar/index"
-  },
+
  
   "permission": {
     "scope.userLocation": {

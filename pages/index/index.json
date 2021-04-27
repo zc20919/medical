@@ -1,5 +1,6 @@
 {
   "navigationBarTitleText": "365医网入口",
+  "navigationStyle": "custom",
   "usingComponents": {
     "van-row": "@vant/weapp/row/index",
     "van-col": "@vant/weapp/col/index",

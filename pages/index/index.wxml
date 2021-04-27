@@ -1,6 +1,15 @@
 <!--pages/userinfo/userinfo.wxml-->
 <!-- <text>pages/userinfo/userinfo.wxml</text> -->
-<view class="main">
+<view class="customTitleBar" style="height:{{navHeight}}px;">
+  
+  <view>
+    <image src="/images/icon/logo.png" class="logo"></image>
+  </view>
+  <view style="height:30px;line-height:30px;">
+    365医网入口
+  </view>
+</view>
+<view class="main" style="padding-top:{{navHeight}}px;">
   <view>
     <view class="home_nav_group">
       <view wx:for="{{navlist}}" :key="index" class="home_nav_box">
